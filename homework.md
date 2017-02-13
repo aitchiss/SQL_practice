@@ -44,6 +44,37 @@ id |                title                | year | show_time
  15 | Doctor Strange                      | 2016 | 23:30
 
 2. Return ONLY the name column from the 'people' table
+
+command: SELECT name FROM people;
+
+result: 
+       name        
+--------------------
+ Adam  Baxter
+ Alice Loudon
+ Chris Brown
+ Colin Farquhar
+ David  Hale
+ Douglas Crooke
+ Ewen Carr
+ Ferdinando Sendyka
+ Craig Morton
+ Andrew
+ Andrew
+ Graeme Bell
+ Josef Meszaros
+ Km North
+ Leon-Paul Hart
+ Lewis Brown
+ Richard Page Croft
+ Rob Flett
+ Robert Ball
+ Robert Brice
+ Ross Crichton
+ Simon Smith
+ Suzanne Aitchison
+
+
 3.Oops! Someone at CodeClan spelled Kim's name wrong! Change it to reflect the proper spelling (change 'Km North' to 'Kim North').
 4. Return ONLY your name from the 'people' table.
 5. The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
