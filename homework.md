@@ -138,3 +138,24 @@ result:
 ## Extension
 
 1. Research how to delete multiple entries from your table in a single command.
+
+command: DELETE FROM movies WHERE id IN (1, 2);
+
+result: movies with id 1 and 2 removed from table, i.e:
+
+id |                title                | year | show_time 
+----+-------------------------------------+------+-----------
+  3 | Iron Man 2                          | 2010 | 18:45
+  4 | Thor                                | 2011 | 22:20
+  5 | Captain America: The First Avenger  | 2011 | 16:45
+  6 | Avengers Assemble                   | 2012 | 21:05
+  7 | Iron Man 3                          | 2013 | 17:30
+  8 | Thor: The Dark World                | 2013 | 14:30
+ 10 | Captain America: The Winter Soldier | 2014 | 23:25
+ 12 | Avengers: Age of Ultron             | 2015 | 23:40
+ 13 | Ant-Man                             | 2015 | 16:35
+ 14 | Captain America: Civil War          | 2016 | 23:40
+ 15 | Doctor Strange                      | 2016 | 23:30
+ 16 | Guardians of the Galaxy 2           | 2017 | 00:00
+ 11 | Guardians of the Galaxy             | 2014 | 21:30
+
