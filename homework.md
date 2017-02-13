@@ -82,6 +82,14 @@ command: UPDATE people SET name = 'Kim North' WHERE name = 'Km North';
 result: SELECT name FROM people; now shows entry as 'Kim North'
 
 4. Return ONLY your name from the 'people' table.
+
+command: SELECT name FROM people WHERE name = 'Suzanne Aitchison';
+
+result: 
+       name        
+-------------------
+ Suzanne Aitchison
+
 5. The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
 6. Create a new entry in the 'people' table with the name of one of the instructors.
 7. Craig Morton, has decided to hijack our movie evening, Remove him from the table of people.
