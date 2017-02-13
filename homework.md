@@ -22,9 +22,10 @@ Use the supplied data as the source of data to answer the questions.  Copy the S
 
 1. Return ALL the data in the 'movies' table.
 
-command: SELECT * FROM movies;
+**command: SELECT * FROM movies;**
 
 result: 
+```
 id |                title                | year | show_time 
 ----+-------------------------------------+------+-----------
   1 | Iron Man                            | 2008 | 21:00
@@ -42,12 +43,14 @@ id |                title                | year | show_time
  13 | Ant-Man                             | 2015 | 16:35
  14 | Captain America: Civil War          | 2016 | 23:40
  15 | Doctor Strange                      | 2016 | 23:30
+ ```
 
 2. Return ONLY the name column from the 'people' table
 
-command: SELECT name FROM people;
+**command: SELECT name FROM people;**
 
 result: 
+```
        name        
 --------------------
  Adam  Baxter
@@ -73,76 +76,78 @@ result:
  Ross Crichton
  Simon Smith
  Suzanne Aitchison
-
+```
 
 3.Oops! Someone at CodeClan spelled Kim's name wrong! Change it to reflect the proper spelling (change 'Km North' to 'Kim North').
 
-command: UPDATE people SET name = 'Kim North' WHERE name = 'Km North';
+**command: UPDATE people SET name = 'Kim North' WHERE name = 'Km North';**
 
-result: SELECT name FROM people; now shows entry as 'Kim North'
+**result: SELECT name FROM people; now shows entry as 'Kim North'**
 
 4. Return ONLY your name from the 'people' table.
 
-command: SELECT name FROM people WHERE name = 'Suzanne Aitchison';
+**command: SELECT name FROM people WHERE name = 'Suzanne Aitchison';**
 
 result: 
+```
        name        
 -------------------
  Suzanne Aitchison
+ ```
 
 5. The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
 
-command: DELETE FROM movies WHERE id = 9;
+**command: DELETE FROM movies WHERE id = 9;**
 
-result: SELECT * FROM movies; now shows Batman Begins is missing
+**result: SELECT * FROM movies; now shows Batman Begins is missing**
 
 6. Create a new entry in the 'people' table with the name of one of the instructors.
 
-command: INSERT INTO people (name) VALUES ('Keith Douglas');
+**command: INSERT INTO people (name) VALUES ('Keith Douglas');**
 
-result: SELECT * FROM people; now shows Keith as last entry
+**result: SELECT * FROM people; now shows Keith as last entry**
 
 7. Craig Morton, has decided to hijack our movie evening, Remove him from the table of people.
 
-command: DELETE FROM people WHERE name = 'Craig Morton';
+**command: DELETE FROM people WHERE name = 'Craig Morton';**
 
-result: SELECT * FROM people; now shows no entry for Craig
+**result: SELECT * FROM people; now shows no entry for Craig**
 
 8. Somehow the list of people includes two people named 'Andrew'. Change these entries to the proper names ('Jeff 4', 'Jeff 5')
 
-command: UPDATE people SET name = 'Jeff 4' WHERE id=10;
-command: UPDATE people SET name='Jeff 5' WHERE id=11;
+**command: UPDATE people SET name = 'Jeff 4' WHERE id=10;**
+**command: UPDATE people SET name='Jeff 5' WHERE id=11;**
 
-result: SELECT * FROM people; shows Jeff 4 and Jeff 5, with same id numbers:
-
+**result: SELECT * FROM people; shows Jeff 4 and Jeff 5, with same id numbers:**
+```
 10 | Jeff 4
 11 | Jeff 5
-
+```
 9. The cinema has just heard that they will be holding an exclusive midnight showing of 'Guardians of the Galaxy 2'!! Create a new entry in the 'movies' table to reflect this.
 
-command: INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2', 2017, '00:00');
+**command: INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2', 2017, '00:00');**
 
-result: entry now appears for film:
-
+**result: entry now appears for film:**
+```
 16 | Guardians of the Galaxy 2           | 2017 | 00:00
-
+```
 10. The cinema would also like to make the Guardian movies a back to back feature. Update the 'Guardians of the Galaxy' show time from 12:10 to 21:30
 
-command: UPDATE movies SET show_time = '21:30' WHERE id = 11;
+**command: UPDATE movies SET show_time = '21:30' WHERE id = 11;**
 
-result:
-
+**result:**
+```
 16 | Guardians of the Galaxy 2           | 2017 | 00:00
 11 | Guardians of the Galaxy             | 2014 | 21:30
-
+```
 ## Extension
 
 1. Research how to delete multiple entries from your table in a single command.
 
-command: DELETE FROM movies WHERE id IN (1, 2);
+**command: DELETE FROM movies WHERE id IN (1, 2);**
 
-result: movies with id 1 and 2 removed from table, i.e:
-
+**result: movies with id 1 and 2 removed from table, i.e:***
+```
 id |                title                | year | show_time 
 ----+-------------------------------------+------+-----------
   3 | Iron Man 2                          | 2010 | 18:45
@@ -158,4 +163,4 @@ id |                title                | year | show_time
  15 | Doctor Strange                      | 2016 | 23:30
  16 | Guardians of the Galaxy 2           | 2017 | 00:00
  11 | Guardians of the Galaxy             | 2014 | 21:30
-
+```
