@@ -109,6 +109,15 @@ command: DELETE FROM people WHERE name = 'Craig Morton';
 result: SELECT * FROM people; now shows no entry for Craig
 
 8. Somehow the list of people includes two people named 'Andrew'. Change these entries to the proper names ('Jeff 4', 'Jeff 5')
+
+command: UPDATE people SET name = 'Jeff 4' WHERE id=10;
+command: UPDATE people SET name='Jeff 5' WHERE id=11;
+
+result: SELECT * FROM people; shows Jeff 4 and Jeff 5, with same id numbers:
+
+10 | Jeff 4
+11 | Jeff 5
+
 9. The cinema has just heard that they will be holding an exclusive midnight showing of 'Guardians of the Galaxy 2'!! Create a new entry in the 'movies' table to reflect this.
 10. The cinema would also like to make the Guardian movies a back to back feature. Update the 'Guardians of the Galaxy' show time from 12:10 to 21:30
 
