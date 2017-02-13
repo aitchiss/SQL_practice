@@ -97,6 +97,11 @@ command: DELETE FROM movies WHERE id = 9;
 result: SELECT * FROM movies; now shows Batman Begins is missing
 
 6. Create a new entry in the 'people' table with the name of one of the instructors.
+
+command: INSERT INTO people (name) VALUES ('Keith Douglas');
+
+result: SELECT * FROM people; now shows Keith as last entry
+
 7. Craig Morton, has decided to hijack our movie evening, Remove him from the table of people.
 8. Somehow the list of people includes two people named 'Andrew'. Change these entries to the proper names ('Jeff 4', 'Jeff 5')
 9. The cinema has just heard that they will be holding an exclusive midnight showing of 'Guardians of the Galaxy 2'!! Create a new entry in the 'movies' table to reflect this.
