@@ -128,6 +128,13 @@ result: entry now appears for film:
 
 10. The cinema would also like to make the Guardian movies a back to back feature. Update the 'Guardians of the Galaxy' show time from 12:10 to 21:30
 
+command: UPDATE movies SET show_time = '21:30' WHERE id = 11;
+
+result:
+
+16 | Guardians of the Galaxy 2           | 2017 | 00:00
+11 | Guardians of the Galaxy             | 2014 | 21:30
+
 ## Extension
 
 1. Research how to delete multiple entries from your table in a single command.
