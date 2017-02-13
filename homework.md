@@ -91,6 +91,11 @@ result:
  Suzanne Aitchison
 
 5. The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
+
+command: DELETE FROM movies WHERE id = 9;
+
+result: SELECT * FROM movies; now shows Batman Begins is missing
+
 6. Create a new entry in the 'people' table with the name of one of the instructors.
 7. Craig Morton, has decided to hijack our movie evening, Remove him from the table of people.
 8. Somehow the list of people includes two people named 'Andrew'. Change these entries to the proper names ('Jeff 4', 'Jeff 5')
